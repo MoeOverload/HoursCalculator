@@ -5,5 +5,8 @@ def index(request):
 		return render(request,"HoursCalc/index.html")
 	
 def AddHours(request):
+	if request.method == "POST":
+		
+		pass
 	if request.method == "GET":
 		return render(request, "HoursCalc/AddHours.html")
